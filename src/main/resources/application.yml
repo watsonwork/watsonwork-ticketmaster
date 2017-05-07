@@ -1,0 +1,41 @@
+info:
+    app:
+       name: {build.app.name}
+       group: {build.app.group}
+       description: {build.app.description}
+       version: {build.app.version}
+       buildtime: {build.app.buildtime}
+
+spring:
+        application:
+             name: {build.app.name}
+
+server:
+        port: ${HTTP_PORT:9080}
+        tomcat:
+             uri-encoding: ${URI_ENCODING:UTF-8}
+
+watsonwork:
+        webhook:
+            secret: ${WEBHOOK_SECRET:your-webhook-secret}
+        app:
+            id: ${APP_ID:your-app-id}
+            secret: ${APP_SECRET:your-app-secret}
+        api:
+            uri: ${WATSON_WORK_API_URI:https://api.watsonwork.ibm.com}
+
+graphql:
+        api:
+            uri: ${GRAPHQL_API_URI:https://api.watsonwork.ibm.com}
+
+
+google:
+        api:
+            uri: ${GOOGLE_API_URI:https://maps.googleapis.com/}
+            key: ${GOOGLE_API_KEY:your-google-api-key}
+
+ticketmaster:
+        api:
+            uri: ${TICKETMASTER_API_URI:https://app.ticketmaster.com/discovery/v2/}
+            consumer-key: ${TICKETMASTER_CONSUMER_KEY:your-ticketmaster-consumer-key}
+            consumer-secret: ${TICKETMASTER_CONSUMER_SECRET:your-ticketmaster-consumer-secret}
