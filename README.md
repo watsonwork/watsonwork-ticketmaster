@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/watsonwork/watsonwork-ticketmaster.svg)](https://travis-ci.org/watsonwork/watsonwork-ticketmaster)
 
-A sample Watson work cognitive app that integrates with the Ticketmaster api's 
+A sample Watson enabled cognitive app that integrates with the Ticketmaster api's 
 to illustrate action fulfillment flows. You can find out more about this at 
 http://developer.ticketmaster.com and details follow on how to register.
 
